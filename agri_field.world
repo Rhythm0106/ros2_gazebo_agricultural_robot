@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="agri_world">
+
+    <!-- Sun -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Custom Field Ground -->
+    <model name="field_ground">
+      <static>true</static>
+      <pose>0 0 0 0 0 0</pose>
+
+      <link name="link">
+
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>30.5 30.5</size>
+            </plane>
+          </geometry>
+        </collision>
+
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>30.5 30.5</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.7 0.4 0.25 1</ambient>
+            <diffuse>0.7 0.4 0.25 1</diffuse>
+          </material>
+        </visual>
+
+      </link>
+    </model>
+
+  </world>
+</sdf>
