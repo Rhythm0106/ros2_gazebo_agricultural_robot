@@ -1,5 +1,3 @@
-# ros2_gazebo_agricultural_robot
-
 
 # ROS2 Gazebo Agricultural Robot Simulation
 
